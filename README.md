@@ -1,3 +1,3 @@
-# Basic-Character_Counter
+# Character Counter
 
-* Basic Character Counter Which can be used for counting the remaining characters in SMS
+Vanilla Js Remaining characters indicator

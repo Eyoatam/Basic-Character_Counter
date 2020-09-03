@@ -11,6 +11,7 @@
     />
     <title>Character-Counter</title>
   </head>
+
   <body>
     <div class="container jumbotron">
       <h1>Basic Characters Counter</h1>
@@ -21,21 +22,6 @@
         <p id="remaining-characters">500 characters remaining</p>
       </form>
     </div>
-    <script>
-      const TextArea = document.getElementById("message");
-      const RemainingCharacters = document.getElementById(
-        "remaining-characters"
-      );
-      const MaxChars = 500;
-
-      TextArea.addEventListener("input", () => {
-        const Remaining = MaxChars - TextArea.value.length;
-        const Danger = Remaining < MaxChars * 0.1 ? "red" : null;
-
-        RemainingCharacters.textContent = `${Remaining} Characters Remaining`;
-        RemainingCharacters.style.color = Danger;
-      });
-    </script>
-    
+    <script src="script.js"></script>
   </body>
 </html>
