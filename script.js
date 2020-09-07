@@ -8,4 +8,8 @@ TextArea.addEventListener("input", () => {
 
   RemainingCharacters.textContent = `${Remaining} Characters Remaining`;
   RemainingCharacters.style.color = Danger;
+  
+  if(TextArea.input.value.length === 500) {
+    TextArea.readonly = true;
+  }
 });
